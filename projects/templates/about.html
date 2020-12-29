@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <!-- Personal CSS file -->
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<div class="container" style="max-width: 42em;">
+    <main role="main" class="inner cover">
+        <!--Profile Picture-->
+        <div class="text-center">
+            <img class="bd-img bd-img-lg featurette-image img-fluid mx-auto rounded-circle"
+                src="{% static 'projects/img/appuinus.JPG' %}" width="300" height="300" focusable="false" role="img"
+                aria-label="appu">
+            <title>Ninja</title>
+            <rect width="100%" height="100%" fill="#eee" /></img>
+        </div>
+        <!--//Profile Picture "DSC_0002_Original.jpg"-->
+        <h1 class="cover-heading">Appu Raj V</h1>
+        <p class="lead text" style="color: rgba(255, 255, 255, .5);">Security Ninja, who one day will break into systems</p>
+        <p class="lead">The secret ingredient is... nothing ! To make something special you just have to believe it's special.</p>
+        <p class="lead">
+            <!--//Get In Touch-->
+            <a class="nav-item btn btn-primary font-weight-bold" href="mailto:appurajv@icloud.com"
+                style="background-color: white; border: 0; color: #1b1b1d;">Contact</a>
+            <a class="nav-item btn btn-primary font-weight-bold" href="{% static 'projects/pdf/Appu_resume_final2.pdf' %}"
+                style="background-color: white; border: 0; color: #1b1b1d;" target="_blank"
+                type=application/pdf>Resume</a>
+            <!--//Get In Touch-->
+            <!--Social Proof Buttons-->
+            <div class="container my-2">
+                <a class="nav-item fab fa-github-square fa-2x" style="color: white; background-color: #1b1b1d;"
+                    href="https://github.com/appurajv" target="_blank"></a>
+                <a class="nav-item fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/appu-raj/"
+                    target="_blank"></a>
+            </div>
+            <!--//Social Proof Buttons-->
+        </p>
+    </main>
+</div>
+
+{% endblock %}
